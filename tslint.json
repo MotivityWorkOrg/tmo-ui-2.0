@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rulesDirectory": [
+    "node_modules/codelyzer"
+  ],
+  "rules": {
+    // Custom
+    "trailing-comma": [false, {"multiline": "always", "singleline": "never"}],
+    "interface-name": false,
+    // General
+    "no-console": [true, "time", "timeEnd", "trace"],
+    "whitespace": false,
+    "indent": [true, "spaces"],
+    "max-line-length": [true, 300],
+    "no-string-literal": true,
+    "comment-format": true,
+    "no-use-before-declare": true,
+    "object-literal-sort-keys": false,
+    "object-literal-shorthand": false,
+    "ordered-imports": false,
+    "switch-default": false,
+    "no-empty": false,
+    "no-trailing-whitespace": false,
+    "align": [true, "parameters", "statements"],
+    "quotemark": [true, "single", "double", "avoid-escape"],
+    "variable-name": [
+      true,
+      "allow-leading-underscore",
+      "ban-keywords",
+      "check-format"
+    ]
+  }
+}

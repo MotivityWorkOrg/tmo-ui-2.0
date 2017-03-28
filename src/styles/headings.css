@@ -1,0 +1,374 @@
+.account-bar {
+  height: 60px;
+  max-height: 60px;
+  padding-top: 12px;
+}
+
+
+.tmo-error{
+  color:red;
+  margin-left: 1%;
+}
+
+.tmo-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -50px;
+}
+
+.tmo-container{
+  width:100%
+}
+
+.tmo-footer {
+  height: 40px;
+  background-color: #5a5a5a;
+  color: #fff;
+  line-height: 40px;
+  white-space: nowrap;
+}
+.tmo-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.tmo-tag {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 1.563rem;
+}
+.tmo-tag-info {
+  background-color: #5bc0de;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.popOverDetails-1
+{
+  position: fixed;
+  z-index: 1001;
+  width:60%;
+  display:block;
+  background-color: #f1c40f;
+  top:20%;
+  left:23%;
+  outline: 9999px solid rgba(0,0,0,0.5);
+}
+
+.popOverDetails {
+  /* some styles to position the modal at the center of the page */
+  position: fixed;
+  top: 50%;
+  left: 32%;
+  width: 60%;
+  margin-left: -150px;
+  margin-top: -100px;
+  background-color: #f1c40f;
+  text-align: center;
+  border-radius: 5px;
+
+  /* needed styles for the overlay */
+  z-index: 10; /* keep on top of other elements on the page */
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+}
+
+.carousel-control  {
+  width:20px;
+  background: none !important;
+  text-shadow: 0;
+}
+.carousel-control.right {
+  background: none !important;
+}
+
+.bg-tmo {
+  background: #E20074 !important;
+  height: 86px;
+}
+
+.tmo-caption {
+  padding:15px !important;
+}
+
+.tmo-strike{
+  text-decoration: line-through
+}
+
+.tmo-ez-thumbnail-photo {
+  height: 100px !important;
+  width: auto !important;
+}
+
+.tmo-ez-thumbnail-large-photo {
+  height: 290px !important;
+  width: auto !important;
+}
+
+
+select.form-control {
+  -webkit-appearance: menulist;
+}
+
+.noItems{
+  color:darkgray;
+  margin-left:50%;
+}
+
+
+.form-control:focus {
+  border-color: #66afe9 !important;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 3px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 3px 3px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+
+
+.wizard a {
+  padding: 10px 12px 10px;
+  margin-right: 5px;
+  background: #efefef;
+  position: relative;
+  display: inline-block;
+}
+.wizard a:before {
+  width: 0;
+  height: 0;
+  border-top: 20px inset transparent;
+  border-bottom: 20px inset transparent;
+  border-left: 20px solid #fff;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+}
+.wizard a:after {
+  width: 0;
+  height: 0;
+  border-top: 20px inset transparent;
+  border-bottom: 20px inset transparent;
+  border-left: 20px solid #efefef;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
+  z-index: 2;
+}
+.wizard a:first-child:before,
+.wizard a:last-child:after {
+  border: none;
+}
+.wizard a:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.wizard a:last-child {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.wizard .badge {
+  margin: 0 5px 0 18px;
+  position: relative;
+  top: -1px;
+}
+.wizard a:first-child .badge {
+  margin-left: 0;
+}
+.wizard .current {
+  --background: #007ACC;
+  background: #E20074;
+  color: #fff;
+}
+.wizard .current:after {
+  border-left-color: #E20074;
+}
+
+
+/* ff anti-aliasing bug - http://coderwall.com/p/tpmsta */
+.mywizard li {
+  position: relative;
+  background: #f5f5f5;
+  padding-right: 30px;
+  padding-left: 5px;
+}
+
+.mywizard li a:after, .mywizard li a:before {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.mywizard li a:after {
+  border-color: rgba(245, 245, 245, 0);
+  border-left-color: #f5f5f5;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -30px;
+}
+
+.mywizard li a:before {
+  border: 30px rgba(255, 255, 255, 0);
+  border-left-color: #fff;
+  top: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.mywizard li .badge {
+  vertical-align: text-bottom;
+  padding-top: 3px;
+}
+
+
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /*#background: black url(spinner.gif) center center no-repeat;
+  background: rgba(0,0,0,.5) url(spinner.gif) center center no-repeat;*/
+  opacity: .5;
+}
+
+/* Absolute Center Spinner */
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  /*overflow: show;*/
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;/*rgba(0, 0, 0, 0.75)*/
+  -webkit-box-shadow: rgb(226, 0, 116) 1.5em 0 0 0, rgb(226, 0, 116) 1.1em 1.1em 0 0, rgb(226, 0, 116) 0 1.5em 0 0, rgb(226, 0, 116) -1.1em 1.1em 0 0, rgb(226, 0, 116) -1.5em 0 0 0, rgb(226, 0, 116) -1.1em -1.1em 0 0, rgb(226, 0, 116) 0 -1.5em 0 0, rgb(226, 0, 116) 1.1em -1.1em 0 0;
+  box-shadow: rgb(226, 0, 116) 1.5em 0 0 0, rgb(226, 0, 116) 1.1em 1.1em 0 0, rgb(226, 0, 116) 0 1.5em 0 0, rgb(226, 0, 116) -1.1em 1.1em 0 0, rgb(226, 0, 116) -1.5em 0 0 0, rgb(226, 0, 116) -1.1em -1.1em 0 0, rgb(226, 0, 116) 0 -1.5em 0 0, rgb(226, 0, 116) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

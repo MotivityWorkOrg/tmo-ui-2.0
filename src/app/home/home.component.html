@@ -1,0 +1,45 @@
+<!-- HEADER -->
+<div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 84px;">
+  <header class="header fixed">
+    <div class="header-wrapper bg-tmo">
+      <div class="container"><!-- Logo -->
+        <div class="logo">
+          <a [routerLink]="['/']"><img src="../../assets/img/t-mobile-logo.png" alt="TMOBILE-US"></a>
+        </div>
+        <a href="#" class="menu-toggle btn btn-theme-transparent">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+<!-- /HEADER -->
+<div class="content">
+  <div style="margin-top:10%">
+    <div style="font-size:40px;padding-left:41%;">
+      <strong> What do you want to do </strong>
+    </div>
+    <div style="padding-left:47%; font-size:35px">
+      <strong>Shop Items(PHONES)</strong>
+    </div>
+
+    <div style="padding-left:47%; font-size:35px" *ngIf="successmessage">
+      {{successmessage}}
+    </div>
+    
+    <div style="margin-left:65%" class="buttons">
+      <a class="btn btn-theme" [routerLink]="['/searchProducts']">Start</a>
+    </div>
+  </div>
+  <div style="background-color: #bebebe; margin-top:5%">
+    <div class="row" style="margin-left: 45%">
+      <ul style="list-style-type: square">
+        <li><h5>Uses EP</h5></li>
+        <li><h5>Uses Microservices</h5></li>
+        <li><h5>Uses Rest API</h5></li>
+        <li><h5>Uses Node & Mongo</h5></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /.container -->
+</div>
